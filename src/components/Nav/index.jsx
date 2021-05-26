@@ -5,7 +5,7 @@ import { data } from '../../data'
 
 export const Nav = () => {
     return (
-        <div>
+        <div style={styles}>
             {
                 data.map((link, id) => {
                     return <Link key={id} to={link.route}>
@@ -15,4 +15,9 @@ export const Nav = () => {
             }
         </div>
     )
+}
+
+const styles = {
+    display: "flex",
+    flexDirection: "column-reverse",
 }
