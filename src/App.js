@@ -12,7 +12,7 @@ export const App = () => {
   return (
     
       <Router>
-         <Layout>
+         <Layout style={{height: '100vh'}}>
            {/* sidebar */}
            <Sider>
              <Nav/>
